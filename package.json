@@ -1,0 +1,19 @@
+{
+  "name": "angular4",
+  "version": "1.0.0",
+  "description": "Angular 4, Node.js, Prime.ng, Mongodb, Webpack 2, Google maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sky777Light/angular4.git"
+  },
+  "author": "FieryFenix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sky777Light/angular4/issues"
+  },
+  "homepage": "https://github.com/Sky777Light/angular4#readme"
+}
