@@ -1,7 +1,3 @@
-/**
- * @author: @AngularClass
- */
-
 const webpack = require('webpack');
 const helpers = require('./helpers');
 
@@ -30,18 +26,14 @@ const ngcWebpack = require('ngc-webpack');
 const HMR = helpers.hasProcessFlag('hot');
 const AOT = process.env.BUILD_AOT || helpers.hasNpmFlag('aot');
 const METADATA = {
-  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
+  title: 'Fiery Fenix Starter',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer(),
   HMR: HMR,
   AOT: AOT
 };
 
-/**
- * Webpack configuration
- *
- * See: http://webpack.github.io/docs/configuration.html#cli
- */
+
 module.exports = function (options) {
   isProd = options.env === 'production';
   return {
@@ -163,7 +155,7 @@ module.exports = function (options) {
          *
          */
         {
-          test: /\.scss$/,
+          test: /\.s[ac]ss$/,
           use: ['to-string-loader', 'css-loader', 'sass-loader'],
           exclude: [helpers.root('src', 'styles')]
         },
@@ -184,14 +176,14 @@ module.exports = function (options) {
          * File loader for supporting images, for example, in CSS files.
          */
         {
-          test: /\.(jpg|png|gif)$/,
+          test: /\.(jpg|png|gif|svg)$/,
           use: 'file-loader'
         },
 
         /* File loader for supporting fonts, for example, in CSS files.
         */
         {
-          test: /\.(eot|woff2?|svg|ttf)([\?]?.*)$/,
+          test: /\.(eot|woff2?|ttf)([\?]?.*)$/,
           use: 'file-loader'
         }
 

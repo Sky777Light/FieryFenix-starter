@@ -135,7 +135,7 @@ module.exports = function (options) {
          * See: https://github.com/webpack/raw-loader
          */
         {
-            test: /\.scss$/,
+            test: /\.s[ac]ss$/,
             loader: ['raw-loader', 'sass-loader'],
             exclude: [helpers.root('src/index.html')]
         },
